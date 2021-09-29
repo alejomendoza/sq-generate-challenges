@@ -19,9 +19,12 @@ const sourceKeys = Keypair.fromSecret(
 
 const HORIZON_URL = "https://horizon-testnet.stellar.org";
 
+console.log(HORIZON_URL);
+
 const generateMultipleKeys = () =>
   Array.from({ length: 19 }, () => Keypair.random());
 
+console.log("test");
 const processTransaction = async (
   horizonUrl: string,
   transaction: Transaction
